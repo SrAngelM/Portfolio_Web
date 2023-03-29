@@ -1,0 +1,80 @@
+/* General */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../img/wallpapers/web.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(61, 66, 63);
+}
+
+.navbar .navbar-img {
+  width: auto;
+  margin: 0.5rem 0 0 3rem;
+}
+
+.navbar .navbar-menu {
+  list-style: none;
+  padding-right: 2rem;
+}
+
+.navbar .navbar-menu li {
+  margin: 0 2rem;
+  display: inline-block;
+}
+
+.navbar .navbar-menu li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+}
+
+.navbar .navbar-item__toggle {
+  display: none;
+}
+
+/* Media Querys */
+@media screen and (max-width: 900px) {
+  .navbar .navbar-menu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 77px;
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    background-color: rgba(75, 69, 69, 0.486);
+    z-index: 1;
+    margin-left: -100%;
+    transition: all 0.8s ease;
+  }
+
+  .navbar .navbar-menu__active {
+    margin-left: 0;
+  }
+  .navbar .navbar-menu li {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+
+  .navbar .navbar-item__toggle {
+    display: inline;
+    width: auto;
+    height: auto;
+    margin-right: 4rem;
+  }
+}
