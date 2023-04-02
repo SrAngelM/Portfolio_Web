@@ -22,11 +22,11 @@
   <body>
     <header>
       <div class="navbar">
-        <div class="navbar-img">
-          <img src="./src/img/icons/soporte-tecnico.svg" alt="" />
+        <div class="navbar-logo">
+          <h3>Angel</h3>
         </div>
         <ul class="navbar-menu">
-          <li><a href="#">Inicio</a></li>
+          <li><a href="https://facebook.com" target="_blank">Inicio</a></li>
           <li><a href="#">Sobre mi</a></li>
           <li><a href="#">Proyectos</a></li>
           <li><a href="#">Contacto</a></li>
@@ -40,8 +40,152 @@
         </div>
       </div>
     </header>
-    <main></main>
-    <footer></footer>
+    <main>
+      <!-- Presentacion -->
+      <section class="main-start">
+        <div class="main-start__welcome">
+          <h1>Hola, me llamo</h1>
+          <span class="name">Angel Ricardo Monteverde Corrobarrutia</span>
+          <p>Soy <span class="carrer">Ingenierio de Sistemas</span></p>
+        </div>
+      </section>
+      <div class="main-about-me__title">
+        <h1>Sobre Mi</h1>
+      </div>
+      <section class="main-resume">
+        <div class="main-resume__img">
+          <img src="./src/img/wallpapers/foto.png" alt="Foto Angel" />
+        </div>
+        <div class="main-resume__description">
+          <p>
+            Recién egresado de la carrera de Ingeniería de Sistemas en la
+            universidad César Vallejo - Sede Lima Norte, Perú. Actualmente
+            formandome en el área de desarrollo web empezando con la parte del
+            Front-End. Durante mi tiempo de estudios he ido adquiriendo
+            habilidades técnicas en los Lenguajes de Programación como Java,
+            PHP, JavaScript, usando como motores de base de datos SQL Server,
+            MySQL y SQLite.
+          </p>
+        </div>
+      </section>
+      <section class="main-skills">
+        <h1>Skills</h1>
+        <ul class="main-skills-list">
+          <li>
+            <i class="fa-brands fa-html5 fa-2xl" style="color: #79481b"></i>HTML
+          </li>
+          <li>
+            <i class="fa-brands fa-css3-alt fa-2xl" style="color: #6181b8"></i>
+            CSS
+          </li>
+          <li>
+            <i class="fa-brands fa-js fa-2xl" style="color: #bd9d28"></i>
+            JavaScript
+          </li>
+          <li>
+            <i class="fa-brands fa-java fa-2xl" style="color: #a32314"></i>
+            Java
+          </li>
+          <li>
+            <i class="fa-brands fa-php fa-2xl" style="color: #54157e"></i>
+            PHP
+          </li>
+          <li>
+            <i class="fa-solid fa-database fa-2xl" style="color: #5c6370"></i>
+            SQL
+          </li>
+        </ul>
+      </section>
+      <section class="main-projects">
+        <h1>Mis Proyectos</h1>
+        <div class="main-projects__projects">
+          <div class="project">
+            <img
+              src="./src/img/wallpapers/arcondeon.png"
+              alt=""
+              class="proyect-img"
+            />
+            <div class="overlay">
+              <h3>Acordeon</h3>
+              <p>Proyecto hecho en HTML, CSS y JS</p>
+              <button>Ir al proyecto</button>
+            </div>
+          </div>
+          <div class="project">
+            <img
+              src="./src/img/wallpapers/calculadora.png"
+              alt=""
+              class="proyect-img"
+            />
+            <div class="overlay">
+              <h3>Calculadora</h3>
+              <p>Proyecto hecho en HTML, CSS y JS</p>
+              <button>Ir al Proyecto</button>
+            </div>
+          </div>
+          <div class="project">
+            <img
+              src="./src/img/wallpapers/cronometro.png"
+              alt=""
+              class="proyect-img"
+            />
+            <div class="overlay">
+              <h3>Cronomero</h3>
+              <p>Proyecto hecho en HTML, CSS y JS</p>
+              <button>Ir al Proyecto</button>
+            </div>
+          </div>
+          <div class="project">
+            <img
+              src="./src/img/wallpapers/todolist.png"
+              alt=""
+              class="proyect-img"
+            />
+            <div class="overlay">
+              <h3>To do List</h3>
+              <p>Proyecto hecho en HTML, CSS y JS</p>
+              <button>Ir al Proyecto</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-contact">
+        <div class="footer-contat__container">
+          <div class="contact-box">
+            <div class="left"></div>
+            <div class="right">
+              <h2>Contactame</h2>
+              <form
+                action="https://formsubmit.co/angelmontc27@gmail.com"
+                method="POST"
+              >
+                <input
+                  type="text"
+                  name="name"
+                  class="field"
+                  placeholder="Nombre"
+                />
+                <input
+                  type="email"
+                  name="email"
+                  class="field"
+                  placeholder="Email"
+                />
+                <textarea
+                  placeholder="Message"
+                  name="comments"
+                  class="field"
+                ></textarea>
+                <button class="btn" type="submit">Send</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-end"></div>
+    </footer>
     <script src="./src/js/script.js"></script>
   </body>
 </html>
